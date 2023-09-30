@@ -1,11 +1,10 @@
-<!-- by StemDev0110 -->
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Libro de Minecraft</title>
     <style>
-/* fonts de minecraft sacados de internet Creditos completos */
         @font-face {
     font-family: "MINECRAFT PE";
     src: url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.eot");
@@ -51,30 +50,26 @@
     url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.ttf")format("truetype"),
     url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.svg#Minecraft Regular")format("svg");
 }
-      /* este css lo pienso cambiar, ya que no esta adaptado para todos */
         body {
             font-family: Minecraft, sans-serif;
             text-align: center;
-            background-color: #f2f2f2;
         }
 
         .book {
             width: 60%;
             margin: 0 auto;
-            background-color: #fff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
             display: flex;
             flex-direction: column;
             align-items: center;
             background-repeat:repeat;
-            background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/c/c5/Cracked_Polished_Blackstone_Bricks_%28texture%29_JE2.png/revision/latest?cb=20210217183414");
+            background-image: url("./src/media/Cracked_Polished_Blackstone_Bricks_\(texture\)_JE2.webp");
         }
 
         .page {
             display: none;
             background-size: cover;
-            background-image: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/4/4d/Book_Background_%28JE%29.png/revision/latest?cb=20190331054032");
+            background-image: url("./src/media/Book_Background_\(JE\).webp");
             background-repeat: no-repeat;
             padding: 20px;
             margin-bottom: 20px;
@@ -126,13 +121,13 @@
         .arrow-button:hover img {
             filter: hue-rotate(-47deg) saturate(700%);
         }
-      /* imagenes de assets online, no son mias creditos a FandomMinecraft! */
+
         .arrow-left img {
-            content: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/7/7e/Book_Arrowleft_%28JE%29.png/revision/latest?cb=20190331064208");
+            content: url("./src/media/Book_Arrowleft_\(JE\).webp");
         }
-      
+
         .arrow-right img {
-            content: url("https://static.wikia.nocookie.net/minecraft_gamepedia/images/a/ab/Book_Arrowright_%28JE%29.png/revision/latest?cb=20190331063119");
+            content: url("./src/media/Book_Arrowright_\(JE\).webp");
         }
     </style>
 </head>
@@ -156,7 +151,7 @@
             <button id="nextPage" class="arrow-button arrow-right"><img src="" alt="Flecha derecha"></button>
         </div>
 
-    <script>//Cambiar js para que tenga un mejor funcionamiento
+    <script>
         document.addEventListener("DOMContentLoaded", function () {
             const pages = document.querySelectorAll(".page");
             let currentPage = 0;
@@ -193,3 +188,4 @@
         });
     </script>
 </body>
+</html>
