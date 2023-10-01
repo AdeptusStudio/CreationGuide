@@ -1,0 +1,188 @@
+@font-face {
+  font-family: "Minecraft Ten";
+  src: url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.eot");
+  src: url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.svg#Minecraft Ten")format("svg");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-image: url('../../images/background/background0.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #0099cc;
+}
+
+
+.background img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.book-interface {
+  position: relative;
+  width: 454px; /* Cambia según el tamaño de tu libro */
+  height: 569px; /* Cambia según el tamaño de tu libro */
+  top: -15px;
+  padding: 20px;
+  left: 180px;
+  border-radius: 10px;
+  
+  background-size: cover;
+}
+
+.book-cover.hidden {
+  opacity: 1; /* La opacidad final después de la transición */
+}
+
+.book-cover {
+  background-image: url('../../images/book.webp'); /* Cambia la ruta según tu imagen de portada del libro */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  left: -260px;
+  position: absolute;
+  opacity: 0; /* La opacidad inicial */
+  transition: opacity 2s; /* Transición para la opacidad y transformación */
+}
+.book-cover2.hidden {
+  opacity: 1; /* La opacidad final después de la transición */
+}
+
+.book-cover2 {
+  background-image: url('../../images/book.webp'); /* Cambia la ruta según tu imagen de portada del libro */
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  left: 230px;
+  position: absolute;
+  opacity: 0; /* La opacidad inicial */
+  transition: opacity 2s; /* Transición para la opacidad y transformación */
+}
+
+.text-container.hidden {
+  opacity: 1; /* La opacidad final después de la transición */
+  transform: scale(1); /* La escala final después de la transición */
+}
+.text-container {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  width: 410px;
+  left: 52px;
+  opacity: 0; /* La opacidad inicial */
+  transition: opacity 1.2s, transform 1.2s; /* Transición para la opacidad y transformación */
+  transform: scale(0); /* La escala inicial */
+}
+
+.text-container h1, .text-container h2, .text-container h3 {
+  margin: 0;
+}
+
+.text-container2.hidden {
+  opacity: 1; /* La opacidad final después de la transición */
+  transform: scale(1); /* La escala final después de la transición */
+}
+.text-container2 {
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  width: 410px;
+  left: 52px;
+  opacity: 0; /* La opacidad inicial */
+  transition: opacity 1.2s, transform 1.2s; /* Transición para la opacidad y transformación */
+  transform: scale(0); /* La escala inicial */
+}
+
+.text-container2 h1, .text-container2 h2, .text-container2 h3 {
+  margin: 0;
+}
+
+
+
+h1 {
+  font-family: Minecraft Ten, sans-serif;
+}
+.bottom-left {
+  position: absolute;
+  left: 10px;
+  bottom: 30px;
+  left: 80px;
+  width: 80px;
+  height: 80px;
+  background-size: 1%;
+  z-index: 2;
+}
+
+.bottom-right {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  bottom: 30px;
+  right: 80px;
+  width: 80px;
+  height: 80px;
+  background-size: 1%;
+  z-index: 2;
+  
+}
+
+#arrowleft:hover {
+  content: url('../../images/arrowleftp.webp');
+  cursor: pointer;
+}
+#arrowright:hover {
+  content: url('../../images/arrowright.webp');
+  cursor: pointer;
+}
+#pageUrls {
+  color: blue;
+}
+
+.book-index {
+  position: absolute;
+  left: 40px;
+  top: 20px;
+  width: 288px;
+  height: 580px;
+  background-color: #bdbdbd;
+  border-radius: 10px; /* Define un radio para suavizar los bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1); /* Agrega una sombra negra */
+  overflow: auto;
+}
+
+
+#pageNumber2 {
+  position: absolute;
+  bottom: 35px;
+  left: 50px;
+}
+
+#pageNumber {
+  position: absolute;
+  bottom: 35px;
+  right: 70px;
+}
+
+.indexTexts {
+  padding-left: 12px;
+}
+.references:hover {
+  cursor: pointer;
+  color: aliceblue;
+}
+#indexTitle {
+  padding-left: 15px;
+}

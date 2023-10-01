@@ -1,191 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Libro de Minecraft</title>
-    <style>
-        @font-face {
-    font-family: "MINECRAFT PE";
-    src: url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.eot");
-    src: url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/2f19c0dfb2469e5fed4036453299ea00.svg#MINECRAFT PE")format("svg");
-}
-@font-face {
-    font-family: "Minecrafter Alt";
-    src: url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.eot");
-    src: url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/dc7947b63602675ec87b023cfc35d028.svg#Minecrafter Alt")format("svg");
-}
-@font-face {
-    font-family: "Minecraft Ten";
-    src: url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.eot");
-    src: url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/a7fcb1becc12274d5b761b1d895f8aa9.svg#Minecraft Ten")format("svg");
-}
-@font-face {
-    font-family: "minecraft enchantment Regular";
-    src: url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.eot");
-    src: url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/82724711928097a9b800297e88bbfeb1.svg#minecraft enchantment Regular")format("svg");
-}
-        @font-face {
-    font-family: "Minecraft";
-    src: url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.eot");
-    src: url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.eot?#iefix")format("embedded-opentype"),
-    url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.woff2")format("woff2"),
-    url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.woff")format("woff"),
-    url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.ttf")format("truetype"),
-    url("https://db.onlinewebfonts.com/t/6ab539c6fc2b21ff0b149b3d06d7f97c.svg#Minecraft Regular")format("svg");
-}
-        body {
-            font-family: Minecraft, sans-serif;
-            text-align: center;
-        }
-
-        .book {
-            width: 60%;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-repeat:repeat;
-            background-image: url("./src/media/Cracked_Polished_Blackstone_Bricks_\(texture\)_JE2.webp");
-        }
-
-        .page {
-            display: none;
-            background-size: cover;
-            background-image: url("./src/media/Book_Background_\(JE\).webp");
-            background-repeat: no-repeat;
-            padding: 20px;
-            margin-bottom: 20px;
-            image-rendering: pixelated;
-            width: 52%;
-            height: 74.8vh;
-            align-items:normal;
-            text-align: left;
-        }
-
-        .page h1 {
-            font-size: 24px;
-            margin-left: 20px;
-            font-family: Minecraft Ten;
-        }
-        .page h2 {
-            font-size: 20px;
-            text-align: right;
-            margin-right: 20px;
-            font-family: Minecrafter Alt;
-        }
-
-        .page p {
-            font-size: 16px;
-            margin-left: 20px;
-        }
-
-        .controls {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .arrow-button {
-            padding: 10px;
-            background: none;
-            border: none;
-            cursor: pointer;
-            margin: 5px;
-        }
-
-        .arrow-button img {
-            width: auto;
-            height: 40px;
-            transition: filter 0.2s;
-            image-rendering: pixelated;
-        }
-
-        .arrow-button:hover img {
-            filter: hue-rotate(-47deg) saturate(700%);
-        }
-
-        .arrow-left img {
-            content: url("./src/media/Book_Arrowleft_\(JE\).webp");
-        }
-
-        .arrow-right img {
-            content: url("./src/media/Book_Arrowright_\(JE\).webp");
-        }
-    </style>
+  <title>Minecraft Book Interface</title>
+  <link rel="stylesheet" href="src/assets/css/style.css">
+  <meta charset="UTF-8">
 </head>
-<body class="book">
-        <div class="page">
-            <h1>Introduccion</h1>
-            <p>Texto de la pagina introductoria</p>
-        </div>
-        <div class="page">
-            <h2>Parte 1</h1>
-            <h1>Creacion de Elementos</h1>
-            <p>Texto de la pagina introductoria</p>
-        </div>
-        <div class="page">
-            <h2>Parte 2</h1>
-            <h1>Creacion de Elementos</h1>
-            <p>Texto de la pagina introductoria</p>
-        </div>
-        <div class="controls">
-            <button id="prevPage" class="arrow-button arrow-left"><img src="" alt="Flecha izquierda"></button>
-            <button id="nextPage" class="arrow-button arrow-right"><img src="" alt="Flecha derecha"></button>
-        </div>
+<body>
+  <div class="book-index" id="bookIndex">
+    <h1 id="indexTitle">Índice</h1>
+    <div class="indexTexts">
+      <h2 class="references" id="1">1- Introduccion</h>
+      <h2 class="references" id="2">2- Indice</h2>
+      <h2 class="references" id="3">3- Pagina de ejemplo</h2>
+      <h2 class="references" id="4">4- Corto</h2>
+      <h2 class="references" id="5">5- Texto demasiadamente largo para ser normal</h2>
+      <h2 class="references" id="6">6- Prueba y test</h2>
+      <h2 class="references" id="7">7- De relleno</h2>
+      <h2 class="references" id="8">3- Pagina de ejemplo</h2>
+      <h2 class="references" id="9">4- Corto</h2>
+      <h2 class="references" id="10">5- Texto demasiadamente largo para ser normal</h2>
+      <h2 class="references" id="11">6- Prueba y test</h2>
+      <h2 class="references" id="12">7- De relleno</h2>
+    </div>
+  </div>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const pages = document.querySelectorAll(".page");
-            let currentPage = 0;
+  <div class="book-interface" id="bookContainer">
+  
+    
 
-            function showPage(pageIndex) {
-                if (pageIndex < 0) {
-                    pageIndex = 0;
-                } else if (pageIndex >= pages.length) {
-                    pageIndex = pages.length - 1;
-                }
-
-                pages.forEach((page, index) => {
-                    if (index === pageIndex) {
-                        page.style.display = "block";
-                    } else {
-                        page.style.display = "none";
-                    }
-                });
-
-                currentPage = pageIndex;
-            }
-
-            const prevPageButton = document.getElementById("prevPage");
-            prevPageButton.addEventListener("click", () => {
-                showPage(currentPage - 1);
-            });
-
-            const nextPageButton = document.getElementById("nextPage");
-            nextPageButton.addEventListener("click", () => {
-                showPage(currentPage + 1);
-            });
-
-            showPage(currentPage);
-        });
-    </script>
+    <div class="book-cover">
+      <h2 id="pageNumber">Página nula</h2>
+      <div class="text-container">
+        <h1 id="pageTitle">Si esque estas viendo esto</h1>
+        <h2 id="pageSubtitle">Hubo un error, reinicia la pagina</h2>
+        <h3 id="pageText">o hablale a algun staff</h3>
+        <h3 id="pageUrls"></h3>
+        <img id="pageImg" src="" alt="Null">
+      </div>
+      <div class="bottom-left">
+        <img id="arrowleft" src="./src/images/arrowleft.webp" alt="Imagen Esquina Izquierda Abajo">
+      </div>
+    </div>
+    <div class="book-cover2">
+      <h2 id="pageNumber2">Página nula</h2>
+      <div class="text-container2">
+        <h1 id="pageTitle2">Si esque estas viendo esto</h1>
+        <h2 id="pageSubtitle2">Hubo un error, reinicia la pagina</h2>
+        <h3 id="pageText2">o hablale a algun staff</h3>
+        <h3 id="pageUrls2"></h3>
+        <img id="pageImg2" src="" alt="Null">
+      </div>
+      <div class="bottom-right">
+        <img id="arrowright" src="./src/images/arrowright.webp" alt="Imagen Esquina Derecha Abajo">
+      </div>
+    </div>
+  </div>
+  <script src="src/assets/js/background.js"></script>
+  <script src="src/assets/js/animation.js"></script>
+  <script src="src/assets/js/script.js"></script>
 </body>
 </html>
